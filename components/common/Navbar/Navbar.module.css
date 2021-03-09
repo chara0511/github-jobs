@@ -1,0 +1,19 @@
+.nav {
+  width: 100%;
+  color: var(--steel-gray);
+  max-width: 1100px;
+  padding: 0.5rem 1rem;
+  text-transform: capitalize;
+}
+
+.nav > h2 {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 700;
+  font-weight: 300;
+  width: max-content;
+}
+
+.nav > h2 > strong {
+  margin-right: 5px;
+}

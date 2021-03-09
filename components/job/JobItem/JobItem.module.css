@@ -1,0 +1,74 @@
+.content {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  margin-bottom: 24px;
+  padding: 12px;
+  gap: 1rem;
+}
+
+.companyLogo {
+  border-radius: 4px;
+}
+
+.description {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.description h3 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 12px;
+}
+
+.description > h4,
+.description > span {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 8px;
+}
+
+.description > span {
+  border: 1px solid var(--chambray);
+  border-radius: 4px;
+  padding: 6px 8px;
+  display: inline-block;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--heather);
+  width: 100%;
+  gap: 5px;
+}
+
+.footer div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.footer div svg {
+  flex: 0 15px;
+  margin-right: 3px;
+}
+
+.footer div p {
+  flex: 1;
+}

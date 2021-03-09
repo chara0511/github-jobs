@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --steel-gray: #282538;
+  --white: #ffffff;
+  --white-lilac: #f6f7fb;
+  --heather: #b9bdcf;
+  --dodger-blue: #1e86ff;
+  --chambray: #334680;
+
+  --font-poppins: 'Poppins', apple-system, 'Ubuntu', 'Cantarell', 'Droid Sans', sans-serif;
+  --font-roboto: 'Roboto', system-ui, BlinkMacSystemFont, 'Segoe UI', 'Oxygen', 'Fira Sans',
+    'Helvetica Neue', sans-serif;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-poppins);
+  background-color: var(--white-lilac);
+  color: var(--chambray);
+}
+
+a {
+  color: var(--dodger-blue);
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none; /* Remove list bullets */
+  padding: 0;
+  margin: 0;
+}
+
+.pages {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.pagination > li {
+  margin-right: 12px;
+}
+
+.pagination > li > a {
+  border: 1px solid var(--heather);
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  color: var(--heather);
+  cursor: pointer;
+}
+
+.pagination > li > a:hover {
+  border: 1px solid var(--dodger-blue);
+  color: var(--dodger-blue);
+}
+
+.active > a {
+  border: 1px solid var(--dodger-blue);
+  background-color: var(--dodger-blue);
+  color: var(--white-lilac) !important;
+}

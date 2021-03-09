@@ -1,0 +1,14 @@
+.button {
+  background-color: var(--dodger-blue);
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  padding: 14px 28px;
+  text-transform: capitalize;
+  color: var(--white);
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  font-family: var(--font-roboto);
+  cursor: pointer;
+}
