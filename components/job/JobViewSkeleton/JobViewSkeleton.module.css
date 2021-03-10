@@ -1,0 +1,137 @@
+.content {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.contact {
+  flex: 0 200px;
+}
+
+.details {
+  flex: 1;
+}
+
+.contact,
+.details {
+  padding: 0;
+}
+
+.title {
+  margin-bottom: 1.25rem;
+}
+
+.how_to_apply {
+  margin: 1rem 0;
+}
+
+.how_to_apply > span {
+  color: var(--heather);
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  width: max-content;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.type {
+  width: 100%;
+  margin-bottom: 0.75rem;
+}
+
+.type > span {
+  border: 1px solid var(--chambray);
+  border-radius: 4px;
+  padding: 6px 8px;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 8px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 24px;
+  padding: 12px 0;
+}
+
+.company_logo {
+  display: flex;
+  border-radius: 4px;
+  padding: 0.125rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.card_content {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0 12px;
+}
+
+.created_at,
+.location {
+  display: flex;
+  justify-content: flex-start;
+  color: var(--heather);
+}
+
+.created_at > svg,
+.location > svg {
+  margin-right: 8px;
+}
+
+@media (min-width: 640px) {
+  .content {
+    flex-direction: row;
+  }
+
+  .contact,
+  .details {
+    padding: 1rem;
+  }
+}
+
+.wrapperBody div {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: placeholderSkeleton;
+  -webkit-animation-timing-function: linear;
+  background: #f6f7f8;
+  background-image: -webkit-gradient(
+    linear,
+    left center,
+    right center,
+    from(#f6f7f8),
+    color-stop(0.2, #edeef1),
+    color-stop(0.4, #f6f7f8),
+    to(#f6f7f8)
+  );
+  background-image: -webkit-linear-gradient(
+    left,
+    #f6f7f8 0%,
+    #edeef1 20%,
+    #f6f7f8 40%,
+    #f6f7f8 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 800px 104px;
+  position: relative;
+}
+
+@-webkit-keyframes placeholderSkeleton {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}

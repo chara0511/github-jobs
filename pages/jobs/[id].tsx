@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router'
 import useSWR from 'swr'
 
-import { JobView } from '@components/job'
+import { JobView, JobViewSkeleton } from '@components/job'
 import { fetcher } from '@lib/fetcher'
 
 const JobPage = () => {
@@ -19,14 +19,10 @@ const JobPage = () => {
       </div>
     )
 
-  if (!data)
-    return (
-      <div>
-        <h2>Loading ...</h2>
-      </div>
-    )
+  if (!data) return <JobViewSkeleton />
 
   return <JobView {...data} />
+  // return <JobViewSkeleton />
 }
 
 export default JobPage

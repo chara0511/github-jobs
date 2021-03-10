@@ -2,7 +2,7 @@ import { useState } from 'react'
 import useSWR from 'swr'
 import ReactPaginate from 'react-paginate'
 
-import { JobItem } from '@components/job'
+import { JobItem, JobItemSkeleton } from '@components/job'
 import { Flex, Jobs, SearchForm } from '@components/ui'
 import { useRouter } from 'next/router'
 import { JobModel } from 'pages'
@@ -28,8 +28,10 @@ const JobsPage = () => {
         <SearchForm />
         <div style={{ flex: 1 }}>
           <Jobs>
-            <h2>Ups!!!</h2>
-            <span>An error has ocurred</span>
+            <div style={{ textAlign: 'center' }}>
+              <h2>Ups!!!</h2>
+              <span>An error has ocurred</span>
+            </div>
           </Jobs>
         </div>
       </Flex>
@@ -41,7 +43,9 @@ const JobsPage = () => {
         <SearchForm />
         <div style={{ flex: 1 }}>
           <Jobs>
-            <h2>Loading ...</h2>
+            <JobItemSkeleton />
+            <JobItemSkeleton />
+            <JobItemSkeleton />
           </Jobs>
         </div>
       </Flex>
