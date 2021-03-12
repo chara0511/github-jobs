@@ -22,7 +22,6 @@ const JobPage = () => {
   if (!data) return <JobViewSkeleton />
 
   return <JobView {...data} />
-  // return <JobViewSkeleton />
 }
 
 export default JobPage

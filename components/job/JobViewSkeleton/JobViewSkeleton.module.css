@@ -2,6 +2,7 @@
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+  width: 100%;
 }
 
 .contact {
@@ -10,15 +11,13 @@
 
 .details {
   flex: 1;
+  position: relative;
+  min-height: 75vh;
 }
 
 .contact,
 .details {
   padding: 0;
-}
-
-.title {
-  margin-bottom: 1.25rem;
 }
 
 .how_to_apply {
@@ -36,67 +35,7 @@
   display: block;
 }
 
-.type {
-  width: 100%;
-  margin-bottom: 0.75rem;
-}
-
-.type > span {
-  border: 1px solid var(--chambray);
-  border-radius: 4px;
-  padding: 6px 8px;
-  display: inline-block;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 14px;
-  margin-bottom: 8px;
-}
-
-.card {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 24px;
-  padding: 12px 0;
-}
-
-.company_logo {
-  display: flex;
-  border-radius: 4px;
-  padding: 0.125rem;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-.card_content {
-  flex: 1;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 0 12px;
-}
-
-.created_at,
-.location {
-  display: flex;
-  justify-content: flex-start;
-  color: var(--heather);
-}
-
-.created_at > svg,
-.location > svg {
-  margin-right: 8px;
-}
-
-@media (min-width: 640px) {
-  .content {
-    flex-direction: row;
-  }
-
-  .contact,
-  .details {
-    padding: 1rem;
-  }
+.how_to_apply > div {
 }
 
 .wrapperBody div {
@@ -127,11 +66,113 @@
   position: relative;
 }
 
+.wrapperBody div {
+  position: absolute;
+}
+
 @-webkit-keyframes placeholderSkeleton {
   0% {
     background-position: -468px 0;
   }
   100% {
     background-position: 468px 0;
+  }
+}
+
+.title {
+  left: 16px;
+  top: 16px;
+  height: 48px;
+  width: 60%;
+}
+
+.type {
+  left: 16px;
+  top: 96px;
+  height: 28px;
+  width: 75px;
+}
+
+.created_at div {
+  left: 36px;
+  top: 128px;
+  height: 25px;
+  width: 175px;
+}
+
+.created_at svg {
+  top: 128px;
+  height: 25px;
+  position: absolute;
+}
+
+.logo div {
+  top: 192px;
+  height: 90px;
+  width: 90px;
+  border-radius: 4px;
+  right: auto;
+}
+
+.company div {
+  left: 116px;
+  top: 192px;
+  height: 35px;
+  left: 120px;
+  width: 100px;
+}
+
+.location svg {
+  left: 120px;
+  top: 256px;
+  height: 25px;
+  position: absolute;
+}
+
+.location div {
+  top: 256px;
+  height: 25px;
+  left: 152px;
+  width: 100px;
+}
+
+.text1 {
+  top: 325px;
+  height: 25px;
+  width: 95%;
+}
+
+.text2 {
+  top: 360px;
+  height: 25px;
+  width: 95%;
+}
+
+.text3 {
+  top: 395px;
+  height: 25px;
+  width: 95%;
+}
+
+.text4 {
+  top: 430px;
+  height: 25px;
+  width: 95%;
+}
+
+.text5 {
+  top: 465px;
+  height: 25px;
+  width: 95%;
+}
+
+@media (min-width: 640px) {
+  .content {
+    flex-direction: row;
+  }
+
+  .contact,
+  .details {
+    padding: 1rem;
   }
 }

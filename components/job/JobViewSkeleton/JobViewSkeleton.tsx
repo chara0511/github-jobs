@@ -19,38 +19,33 @@ const JobViewSkeleton = () => {
         </div>
       </div>
 
-      <div className={styles.wrapperBody}>
+      <div className={`${styles.details} ${styles.wrapperBody}`}>
         <div className={styles.title} />
-
-        <div className={styles.type}>
-          <div />
-        </div>
+        <div className={styles.type} />
 
         <div className={styles.created_at}>
           <Icon name="clock-icon" />
           <div />
         </div>
 
-        <div className={styles.card}>
-          <div className={styles.company_logo}>
-            <div />
-          </div>
-
-          <div className={styles.card_content}>
-            <div className={styles.company}>
-              <div />
-            </div>
-
-            <div className={styles.location}>
-              <Icon name="public-icon" />
-              <div />
-            </div>
-          </div>
-        </div>
-
-        <div className={styles.description}>
+        <div className={styles.logo}>
           <div />
         </div>
+
+        <div className={styles.company}>
+          <div />
+        </div>
+
+        <div className={styles.location}>
+          <Icon name="public-icon" />
+          <div />
+        </div>
+
+        <div className={styles.text1} />
+        <div className={styles.text2} />
+        <div className={styles.text3} />
+        <div className={styles.text4} />
+        <div className={styles.text5} />
       </div>
     </div>
   )
