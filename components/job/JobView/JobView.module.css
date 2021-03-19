@@ -5,7 +5,17 @@
 }
 
 .contact {
+  max-width: 200px;
+  width: 100%;
   flex: 0 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.contact > a {
+  display: flex;
+  align-items: center;
 }
 
 .details {
@@ -14,7 +24,7 @@
 
 .contact,
 .details {
-  padding: 0;
+  margin: 0;
 }
 
 .title {
@@ -95,6 +105,6 @@
 
   .contact,
   .details {
-    padding: 1rem;
+    margin: 1rem;
   }
 }

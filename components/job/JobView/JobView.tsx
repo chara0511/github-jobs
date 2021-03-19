@@ -75,7 +75,7 @@ const JobView: FC<Props> = ({
               width={90}
               height={90}
               objectFit="contain"
-              loading="lazy"
+              loading="eager"
             />
           </div>
 
